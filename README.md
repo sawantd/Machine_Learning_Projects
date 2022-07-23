@@ -38,7 +38,7 @@ OR
 git add <file_name>
 ```
 
-Note : To ignore file/folder from git we can write name of file/folder in .gitignore file
+> Note : To ignore file/folder from git we can write name of file/folder in .gitignore file
 
 To check the git status
 ```
@@ -68,5 +68,17 @@ git remote -v
 To setup CI/CD pipeline in heroku we need 3 information
 
 1. HEROKU_EMAIL = darshanasawant1996@gmail.com
-2. HEROKU_API_KEY = 1544a50f-493b-4867-a4d0-86e47bc17b1f
+2. HEROKU_API_KEY = <>
 3. HEROKU_APP_NAME = ml-regression-app-d
+
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tagname> .
+```
+
+> Note : Image name for docker must be in small case
+
+
+```
+python setup.py install
+```
