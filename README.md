@@ -82,3 +82,8 @@ docker build -t <image_name>:<tagname> .
 ```
 python setup.py install
 ```
+
+Install ipykernel
+```
+pip install ipykernel
+```
