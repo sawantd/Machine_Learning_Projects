@@ -49,7 +49,7 @@ class DataIngestion:
             
             os.makedirs(raw_data_dir,exist_ok=True)
 
-            logging.info(f"Extractinh tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]]")
+            logging.info(f"Extracting tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]]")
             with tarfile.open(tgz_file_path) as housing_tgz_file_obj:
                 housing_tgz_file_obj.extractall(path=raw_data_dir)
             logging.info(f"Extraction completed")
@@ -85,7 +85,7 @@ class DataIngestion:
 
             if strat_train_set is not None:
                 os.makedirs(self.data_ingestion_config.ingested_train_dir,exist_ok=True)
-                logging.info(f"EXporting training dataset to file : [{train_file_path}]")
+                logging.info(f"Exporting training dataset to file : [{train_file_path}]")
                 strat_train_set.to_csv(train_file_path, index = False)
             
             if strat_test_set is not None:
